@@ -9,10 +9,11 @@
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
-        android:text="1"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
         android:layout_marginTop="140dp"
+        android:onClick="typeNumber"
+        android:text="1"
         app:layout_constraintEnd_toStartOf="@id/button2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txtinput" />
@@ -20,8 +21,9 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:onClick="typeNumber"
         android:text="2"
         android:layout_marginTop="140dp"
         app:layout_constraintEnd_toStartOf="@id/button3"
@@ -30,8 +32,9 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:onClick="typeNumber"
         android:text="3"
         android:layout_marginTop="140dp"
         app:layout_constraintEnd_toStartOf="@id/buttonplus"
@@ -40,8 +43,9 @@
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:onClick="typeNumber"
         android:text="4"
         app:layout_constraintBottom_toTopOf="@id/button7"
         app:layout_constraintEnd_toStartOf="@id/button5"
@@ -50,8 +54,9 @@
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:onClick="typeNumber"
         android:text="5"
         app:layout_constraintBottom_toTopOf="@id/button8"
         app:layout_constraintEnd_toStartOf="@id/button6"
@@ -60,8 +65,9 @@
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:onClick="typeNumber"
         android:text="6"
         app:layout_constraintBottom_toTopOf="@id/button9"
         app:layout_constraintEnd_toStartOf="@id/buttonminus"
@@ -70,8 +76,9 @@
 
     <Button
         android:id="@+id/button7"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:onClick="typeNumber"
         android:text="7"
         app:layout_constraintEnd_toStartOf="@id/button8"
         app:layout_constraintStart_toStartOf="parent"
@@ -79,8 +86,9 @@
 
     <Button
         android:id="@+id/button8"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:onClick="typeNumber"
         android:text="8"
         app:layout_constraintEnd_toStartOf="@id/button9"
         app:layout_constraintStart_toEndOf="@id/button7"
@@ -88,8 +96,9 @@
 
     <Button
         android:id="@+id/button9"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:onClick="typeNumber"
         android:text="9"
         app:layout_constraintEnd_toStartOf="@id/buttondivide"
         app:layout_constraintStart_toEndOf="@id/button8"
@@ -97,8 +106,9 @@
 
     <Button
         android:id="@+id/buttonvirgula"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:onClick="typeNumber"
         android:text=","
         app:layout_constraintEnd_toStartOf="@id/button0"
         app:layout_constraintStart_toStartOf="parent"
@@ -106,8 +116,9 @@
 
     <Button
         android:id="@+id/button0"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:onClick="typeNumber"
         android:text="0"
         app:layout_constraintEnd_toStartOf="@id/buttonequals"
         app:layout_constraintStart_toEndOf="@id/buttonvirgula"
@@ -115,8 +126,9 @@
 
     <Button
         android:id="@+id/buttonequals"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:onClick="calculate"
         android:text="="
         app:layout_constraintEnd_toStartOf="@id/buttonmultiply"
         app:layout_constraintStart_toEndOf="@id/button0"
@@ -124,9 +136,10 @@
 
     <Button
         android:id="@+id/buttonplus"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
         android:layout_marginTop="140dp"
+        android:onClick="typeNumber"
         android:text="+"
         app:layout_constraintBottom_toTopOf="@+id/buttonminus"
         app:layout_constraintEnd_toEndOf="parent"
@@ -135,8 +148,9 @@
 
     <Button
         android:id="@+id/buttonminus"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:onClick="typeNumber"
         android:text="-"
         app:layout_constraintBottom_toTopOf="@+id/buttondivide"
         app:layout_constraintEnd_toEndOf="parent"
@@ -145,8 +159,9 @@
 
     <Button
         android:id="@+id/buttondivide"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:onClick="typeNumber"
         android:text="/"
         app:layout_constraintBottom_toTopOf="@+id/buttonmultiply"
         app:layout_constraintEnd_toEndOf="parent"
@@ -155,19 +170,25 @@
 
     <Button
         android:id="@+id/buttonmultiply"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:onClick="typeNumber"
         android:text="*"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/buttonequals"
         app:layout_constraintTop_toBottomOf="@id/buttondivide" />
 
-    <com.google.android.material.textfield.TextInputLayout
+    <TextView
         android:id="@+id/txtinput"
         android:layout_width="350dp"
-        android:layout_height="50dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="200dp"
         android:background="@color/whitegray"
-        android:layout_marginTop="150dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#673AB7"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="normal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
