@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "br.edu.ifsp.sc3038939.calculadora"
+    namespace = "br.edu.ifsp.scl.sc3038939.calculadora"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "br.edu.ifsp.sc3038939.br.edu.ifsp.scl.sc3038939.calculadora"
+        applicationId = "br.edu.ifsp.scl.sc3038939.calculadora"
         minSdk = 26
         targetSdk = 36
         versionCode = 1

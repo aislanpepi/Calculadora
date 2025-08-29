@@ -1,28 +1,42 @@
 package br.edu.ifsp.scl.sc3038939.calculadora
 
 import android.os.Bundle
-import android.view.View
-import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import br.edu.ifsp.sc3038939.calculadora.databinding.ActivityMainBinding
-import java.lang.Exception
+import br.edu.ifsp.scl.sc3038939.calculadora.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-    }
-    fun typeNumber(view: View){
-        val button = view as Button
-        binding.txtinput.append(button.text.toString())
+
+        val numberAndOperatorButtons = listOf(
+            binding.button0, binding.button1, binding.button2, binding.button3,
+            binding.button4, binding.button5, binding.button6, binding.button7,
+            binding.button8, binding.button9,
+            binding.buttonplus, binding.buttonminus,
+            binding.buttonmultiply, binding.buttondivide,
+            binding.buttonvirgula
+        )
+
+        numberAndOperatorButtons.forEach { button ->
+            button.setOnClickListener {
+                binding.txtinput.append(button.text)
+            }
+        }
+
+        binding.buttonequals.setOnClickListener {
+            calculate()
+        }
     }
 
-    fun calculate(view: View){
-        var txtView = binding.txtinput.text
+
+    fun calculate(){
+        val txtView = binding.txtinput.text
         var firstNumber = ""
         var secondNumber = ""
         val regex = Regex("[+-/*]")
