@@ -32,6 +32,10 @@ class MainActivity : AppCompatActivity() {
         binding.buttonequals.setOnClickListener {
             calculate()
         }
+
+        binding.buttonClear.setOnClickListener {
+            binding.txtinput.text = ""
+        }
     }
 
 
