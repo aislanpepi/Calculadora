@@ -96,10 +96,10 @@
         app:layout_constraintTop_toBottomOf="@id/button6" />
 
     <Button
-        android:id="@+id/buttonvirgula"
+        android:id="@+id/buttondot"
         android:layout_width="80dp"
         android:layout_height="60dp"
-        android:text=","
+        android:text="."
         app:layout_constraintEnd_toStartOf="@id/button0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button7" />
@@ -110,7 +110,7 @@
         android:layout_height="60dp"
         android:text="0"
         app:layout_constraintEnd_toStartOf="@id/buttonequals"
-        app:layout_constraintStart_toEndOf="@id/buttonvirgula"
+        app:layout_constraintStart_toEndOf="@id/buttondot"
         app:layout_constraintTop_toBottomOf="@id/button8" />
 
     <Button
